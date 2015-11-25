@@ -1,0 +1,8 @@
+<img src="http://www.lovethemovie.org/wp-content/uploads/2014/02/IMDb-logo-672x361.jpg" height="242" width="542" />
+<h1>List Of Movies</h1>
+<%= form_tag "/movies_app/actors", method: :get do  %>
+  <%= collection_select(:movie, :id, @movies.all, :id, :name_with_id) %>
+  <%= submit_tag "Select Movie" %>
+<% end %>
+
+<h2> Project By:</h2> <p>1.Sumanth <br> 2.Vaibhav <br> 3.Mayur Bhandare</p>

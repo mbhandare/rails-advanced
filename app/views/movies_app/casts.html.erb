@@ -1,0 +1,22 @@
+<img src="http://www.lovethemovie.org/wp-content/uploads/2014/02/IMDb-logo-672x361.jpg" height="242" width="542" />
+<table id="casts">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>As</th>
+      
+      
+    </tr>
+  </thead>
+  <% @casts.each do |cast| %>
+    <tr>
+      <td>
+        <%= cast.name %>
+      </td>
+      <td>
+        <%= cast.alias %>
+      </td>
+      
+    </tr>
+  <% end %>
+</table>

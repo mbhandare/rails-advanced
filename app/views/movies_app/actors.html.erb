@@ -1,0 +1,8 @@
+<img src="http://www.lovethemovie.org/wp-content/uploads/2014/02/IMDb-logo-672x361.jpg" height="242" width="542" />
+<h1>List Of Products</h1>
+<%= form_tag "/movies_app/casts", method: :get do %>
+  <%= collection_select(:actor, :id, @actors.all, :id, :name) %>
+  <%= submit_tag "Select Product and Proceed" %>
+<% end %>
+<br/>
+<%= link_to 'Back to Stores', movies_app_movies_path %>
